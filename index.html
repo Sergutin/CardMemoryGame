@@ -12,66 +12,28 @@
 </head>
 
 <body>  
-    <div class="grid">
-        <h1 class="welcome">Welcome to the Card Memory Game!</h1>
-        <div class="panel">
-          <span>Flips: 0</span>
+
+  <!-- WELCOME -->
+  <h1 class="welcome">Welcome to the Card Memory Game!</h1>
+        <p class="info">The object of the game is to collect the most matching pairs. 
           <br>
-          <span>Timer: 0sec</span>
-        </div>
-  
-        <div class="cards">
-          <div class="card" car="bmw">
-            <img src="assets/images/1.png" alt="car logo bmw" />
-          </div>
-          <div class="card" car="bmw">
-            <img src="assets/images/1.png" alt="car logo bmw" />
-          </div>
-          <div class="card" car="audi">
-            <img src="assets/images/2.png" alt="car logo audi" />
-          </div>
-          <div class="card" car="audi">
-            <img src="assets/images/2.png" alt="car logo audi" />
-          </div>
-          <div class="card" car="benz">
-            <img src="assets/images/3.png" alt="car logo mercedes" />
-          </div>
-          <div class="card" car="benz">
-            <img src="assets/images/3.png" alt="car logo mercedes" />
-          </div>
-          <div class="card" car="toyota">
-            <img src="assets/images/4.png" alt="car logo toyota" />
-          </div>
-          <div class="card" car="toyota">
-            <img src="assets/images/4.png" alt="car logo toyota" />
-          </div>
-          <div class="card" car="honda">
-            <img src="assets/images/5.png" alt="car logo honda" />
-          </div>
-          <div class="card" car="honda">
-            <img src="assets/images/5.png" alt="car logo honda" />
-          </div>
-          <div class="card" car="opel">
-            <img src="assets/images/6.png" alt="car logo opel" />
-          </div>
-          <div class="card" car="opel">
-            <img src="assets/images/6.png" alt="car logo opel" />
-          </div>
-          <div class="card" car="mazda">
-            <img src="assets/images/7.png" alt="car logo mazda" />
-          </div>
-          <div class="card" car="mazda">
-            <img src="assets/images/7.png" alt="car logo mazda" />
-          </div>
-          <div class="card" car="ferrari">
-            <img src="assets/images/8.png" alt="car logo ferrari" />
-          </div>
-          <div class="card" car="ferrari">
-            <img src="assets/images/8.png" alt="car logo ferrari" />
-          </div>
-        </div>
+          Test your memory, and reveal the most pairs to win this game!
+          <br>
+          Once all the pairs have been matched, you win!
+        </p>
+      
+      <!-- IMAGE -->
+      <img class="game-image" src="assets/images/game.jpg" alt="boy playing cards with two cards in hand">
+
+      <div class="ready">
+        <p>Ready to play? Select the difficulty of the game:</p>
       </div>
+      
+      <!-- NAV / BUTTONS -->
+      <nav class="navbar">
+        <a href="easy-game.html"><button class="easy">Easy Game</button></a>
+        <a href="normal-game.html"><button class="normal">Normal Game</button></a>
+      </nav>   
     <script src="assets/js/script.js"></script>
 </body>
 </html>
-
