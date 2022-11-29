@@ -1,8 +1,15 @@
 let cards = document.querySelectorAll(".card-easy");
 let cardOne, cardTwo;
 let matched = 0;
-
 let myDeck = false;
+
+/* Add event listener to the cards*/
+
+cards.forEach(card => {
+    card.addEventListener("click", flipCard);
+});
+
+/* Function flip card */
 
 function flipCard({target: clickedCard}) {
     if(cardOne !== clickedCard) {
@@ -18,6 +25,8 @@ function flipCard({target: clickedCard}) {
     }
 }
 
+/* Function match card */
+
 function matchCards(img1, img2) {
     if(img1 === img2) {
         matched++;
@@ -32,12 +41,10 @@ function matchCards(img1, img2) {
         cardOne = cardTwo = "";
         return myDeck = false;
     }
-   
     setTimeout(() => {
         cardOne.classList.add("shake");
         cardTwo.classList.add("shake");
     }, 500);
-
     setTimeout(() => {
         cardOne.classList.remove("shake", "flip");
         cardTwo.classList.remove("shake", "flip");
@@ -45,6 +52,8 @@ function matchCards(img1, img2) {
         myDeck = false;
     }, 1000);
 }
+
+/* Function shuffle card */
 
 function shuffleCard() {
     matched = 0;
@@ -60,12 +69,10 @@ function shuffleCard() {
     });
 }
 
+/* Alert at the end of the game */
+
 function myAlert(){
     alert(`Congratulations, YOU WIN!`);
 }
 
 shuffleCard();
-    
-cards.forEach(card => {
-    card.addEventListener("click", flipCard);
-});
