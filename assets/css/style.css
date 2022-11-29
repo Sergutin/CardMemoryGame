@@ -170,16 +170,16 @@ button:hover {
 }
 
 .card-easy .front-view img{
-    width: 150px;
+    width: 250px;
     opacity: 0.2;
 }
 
 .card .back-view img{
-    max-width: 150px;
+    max-width: 180px;
 }
 
 .card-easy .back-view img{
-    max-width: 150px;
+    max-width: 350px;
 }
 
 .card .back-view{
