@@ -213,6 +213,10 @@ button:hover {
       height: 800px;
       width: 800px;
     }
+    .cards-easy{
+        height: 800px;
+        width: 800px;
+    }
   }
 
 @media screen and (max-width:768px) {
@@ -220,14 +224,23 @@ button:hover {
       height: 700px;
       width: 700px;
     }
+    .cards-easy{
+        height: 700px;
+        width: 700px;
+    }
   }
 
-@media screen and (max-width:425px) {
+  @media screen and (max-width:425px) {
     .cards{
       height: 380px;
       width: 380px;
       margin-left: 25px;
       padding: 15px;
+    }
+
+    .cards-easy{
+      height: 380px;
+      width: 380px;
     }
 
     .card .front-view img{
@@ -248,7 +261,21 @@ button:hover {
       margin-left: 10px;
       margin-right: 10px;
     }
-  }
+
+    .game-image {
+      width: 400px;
+      margin: 0 auto 0 10px;
+    }
+
+    .ready {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .navbar {
+      margin-top: 10px;
+    }
+}
 
   @media screen and (max-width:375px) {
     .cards{
@@ -256,6 +283,11 @@ button:hover {
       width: 350px;
       margin-left: 12px;
       padding: 5px;
+    }
+
+    .cards-easy{
+        height: 350px;
+        width: 350px;
     }
 
     .card .front-view img{
