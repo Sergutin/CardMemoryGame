@@ -1,11 +1,11 @@
-let cards = document.querySelectorAll(".card");
+let cards = document.querySelectorAll(".card-easy");
 let cardOne, cardTwo;
 let matched = 0;
 
 let myDeck = false;
 
 function flipCard({target: clickedCard}) {
-    if(cardOne !== clickedCard && !myDeck) {
+    if(cardOne !== clickedCard) {
         clickedCard.classList.add("flip");
         if(!cardOne) {
             return cardOne = clickedCard;
@@ -21,7 +21,7 @@ function flipCard({target: clickedCard}) {
 function matchCards(img1, img2) {
     if(img1 === img2) {
         matched++;
-        if(matched == 8) {
+        if(matched == 2) {
             setTimeout(() => {
                 return shuffleCard();
             }, 1000);
@@ -32,24 +32,25 @@ function matchCards(img1, img2) {
         cardOne = cardTwo = "";
         return myDeck = false;
     }
+   
     setTimeout(() => {
         cardOne.classList.add("shake");
         cardTwo.classList.add("shake");
-    }, 400);
+    }, 500);
 
     setTimeout(() => {
         cardOne.classList.remove("shake", "flip");
         cardTwo.classList.remove("shake", "flip");
         cardOne = cardTwo = "";
         myDeck = false;
-    }, 1200);
+    }, 1000);
 }
 
 function shuffleCard() {
     matched = 0;
     myDeck = false;
     cardOne = cardTwo = "";
-    let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 8, 7, 6, 5, 4, 3, 2, 1];
+    let myArray = [1, 2, 2, 1];
     myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
     cards.forEach((card, i) => {
         card.classList.remove("flip");
