@@ -125,11 +125,11 @@ button:hover {
 }
   
 .card.shake{
-    animation: shake 0.35s ease-in-out;
+    animation: shake 0.3s ease-in-out;
 }
 
 .card-easy.shake{
-    animation: shake 0.35s ease-in-out;
+    animation: shake 0.3s ease-in-out;
 }
 
 @keyframes shake {
@@ -137,16 +137,16 @@ button:hover {
       transform: translateX(0);
     }
     20%{
-      transform: translateX(-13px);
+      transform: translateX(-15px);
     }
     40%{
-      transform: translateX(13px);
+      transform: translateX(15px);
     }
     60%{
-      transform: translateX(-8px);
+      transform: translateX(-10px);
     }
     80%{
-      transform: translateX(8px);
+      transform: translateX(10px);
     }
   }
 
