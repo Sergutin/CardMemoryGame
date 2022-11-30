@@ -32,9 +32,9 @@ function matchCards(img1, img2) {
         matched++;
         if(matched == 2) {
             setTimeout(() => {
+                myAlert();
                 return shuffleCard();
-            }, 1000);
-            myAlert();
+            }, 500);
         }
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
