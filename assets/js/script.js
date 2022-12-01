@@ -1,7 +1,25 @@
-let cards = document.querySelectorAll(".card");
+let normalCards = document.querySelectorAll(".card");
+let easyCards = document.querySelectorAll(".card-easy");
+let cards;
 let cardOne, cardTwo;
 let matched = 0;
 let blockedDeck = false;
+
+
+
+function startGame(game) {
+    normalCards.style.display = "none";
+    easyCards.style.display = "none";
+    switch(game) {
+        case "easy":
+            easyCards.style.display = "block";
+            break;
+        case "normal":
+            normalCards.style.display = "block";
+            cards = normalCards;
+            break;
+    }
+}
 
 /* Add event listener to the cards */
 
