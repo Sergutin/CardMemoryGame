@@ -1,6 +1,3 @@
-// let normalCards = document.querySelectorAll(".card");
-// let easyCards = document.querySelectorAll(".card-easy");
-
 let normalCards = document.getElementById("cards");
 let easyCards = document.getElementById("cards-easy");
 
@@ -25,7 +22,6 @@ function startNormalGame() {
 /* Add event listener to the cards */
 
 cards.forEach((card) => {
-    console.log("does it work???");
     card.addEventListener("click", flipCard);
 });
 

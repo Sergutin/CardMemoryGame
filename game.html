@@ -17,15 +17,16 @@
     <p>Ready to play? Select the difficulty of the game:</p>
   </div>
 
-  
+  <nav class="navbar">
     <button onclick="startEasyGame()" class="easy" id="easy" aria-label="easy game level">Easy
-        Game</button>
+      Game</button>
     <button onclick="startNormalGame()" class="normal" id="normal" aria-label="normal game level">Normal
-        Game</button>
+      Game</button>
+  </nav>
 
 
   <!-- EASY GAME -->
-  <div class="cards-easy" id="cards-easy" style="display: none">
+  <div class="cards-easy" id="cards-easy">
     <div class="card-easy" id="card-easy">
       <div class="front-view">
         <img src="assets/images/front.png" alt="car with question mark">
@@ -61,7 +62,7 @@
   </div>
 
   <!-- NORMAL GAME -->
-  <div class="cards" id="cards" style="display: none">
+  <div class="cards" id="cards">
     <div class="card" id="card">
       <div class="front-view">
         <img src="assets/images/front.png" alt="car with question mark">
