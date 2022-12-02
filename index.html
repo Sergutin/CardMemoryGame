@@ -2,38 +2,42 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="card memory game">
-    <meta name="keywords" content="card memory game">
-    <meta name="author" content="card memory game">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Card Memory Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="card memory game">
+  <meta name="keywords" content="card memory game">
+  <meta name="author" content="card memory game">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Card Memory Game</title>
 </head>
 
-<body>  
+<body>
 
   <!-- WELCOME -->
   <h1 class="welcome">Welcome to the Card Memory Game!</h1>
-        <p class="info">The object of the game is to collect the most matching pairs. 
-          <br>
-          Test your memory, and reveal the most pairs to win this game!
-          <br>
-          Once all the pairs have been matched, you win!
-        </p>
-      
-      <!-- IMAGE -->
-      <img class="game-image" src="assets/images/game.jpg" alt="boy playing cards with two cards in hand">
+  <p class="info">The object of the game is to collect the most matching pairs.
+    <br>
+    Test your memory, and reveal the most pairs to win this game!
+    <br>
+    Once all the pairs have been matched, you win!
+  </p>
 
-      <div class="ready">
-        <p>Ready to play? Select the difficulty of the game:</p>
-      </div>
-      
-      <!-- NAV / BUTTONS -->
-      <nav class="navbar">
-        <a href="game.html" onclick="startgame('easy')"><button class="easy" aria-label="easy game level">Easy Game</button></a>
-        <a href="game.html" onclick="startGame('normal')"><button class="normal" aria-label="normal game level">Normal Game</button></a>
-      </nav>   
-    <script src="assets/js/script.js"></script>
+  <!-- IMAGE -->
+  <img class="game-image" src="assets/images/game.jpg" alt="boy playing cards with two cards in hand">
+
+  <div class="ready">
+    <p>Ready to play? Select the difficulty of the game:</p>
+  </div>
+
+  <!-- NAV / BUTTONS -->
+  <nav class="navbar">
+    <a href="game.html" onclick="startEasyGame()"><button class="easy" id="easy" aria-label="easy game level">Easy
+        Game</button></a>
+    <a href="game.html" onclick="startNormalGame()"><button class="normal" id="normal" aria-label="normal game level">Normal
+        Game</button></a>
+  </nav>
+  
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>

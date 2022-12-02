@@ -1,46 +1,65 @@
 // let normalCards = document.querySelectorAll(".card");
 // let easyCards = document.querySelectorAll(".card-easy");
 
-let normalCards = document.getElementById("card");
-let easyCards = document.getElementById("card-easy");
-
+let normalCards = document.getElementById("cards");
+let easyCards = document.getElementById("cards-easy");
 
 let cards;
 let cardOne, cardTwo;
 let matched = 0;
 let blockedDeck = false;
 
-function startGame(game) {
+
+
+function startEasyGame() {
+    easyCards.style.display = "flex";
     normalCards.style.display = "none";
-    easyCards.style.display = "none";
-    switch(game) {
-        case "easy":
-            easyCards.style.display = "block";
-            break;
-        case "normal":
-            normalCards.style.display = "block";
-            break;
-    }
 }
+
+function startNormalGame() {
+    easyCards.style.display = "none";
+    normalCards.style.display = "flex";
+}
+
+// startEasyGame();
+// startNormalGame();
+
+
+
+// function startGame(game) {
+//     normalCards.style.display = "none";
+//     easyCards.style.display = "none";
+//     switch (game) {
+//         case "easy":
+//             easyCards.style.display = "none";
+//             break;
+//         case "normal":
+//             normalCards.style.display = "none";
+//             break;
+//     }
+// }
 
 /* Add event listener to the cards */
 
-cards.forEach(card => {
+cards.forEach((card) => {
     card.addEventListener("click", flipCard);
 });
 
+console.log("it works");
 /* Function flip card */
 
-function flipCard({target: clickedCard}) {
-    if(cardOne !== clickedCard && !blockedDeck) {
+function flipCard({
+    target: clickedCard
+}) {
+    if (cardOne !== clickedCard && !blockedDeck) {
         clickedCard.classList.add("flip");
-        if(!cardOne) {
+        if (!cardOne) {
             return cardOne = clickedCard;
         }
         cardTwo = clickedCard;
         blockedDeck = true;
         let cardOneImg = cardOne.querySelector(".back-view img").src,
-        cardTwoImg = cardTwo.querySelector(".back-view img").src;
+            cardTwoImg = cardTwo.querySelector(".back-view img").src;
         matchCards(cardOneImg, cardTwoImg);
     }
 }
@@ -48,9 +67,9 @@ function flipCard({target: clickedCard}) {
 /* Function match cards */
 
 function matchCards(img1, img2) {
-    if(img1 === img2) {
+    if (img1 === img2) {
         matched++;
-        if(matched == 8) {
+        if (matched == 8) {
             setTimeout(() => {
                 myAlert();
                 return shuffleCard();
@@ -62,7 +81,7 @@ function matchCards(img1, img2) {
         return blockedDeck = false;
     }
 
-/* If cards do not match */
+    /* If cards do not match */
 
     setTimeout(() => {
         cardOne.classList.add("shake");
@@ -94,7 +113,7 @@ function shuffleCard() {
 
 /* Alert at the end of the game */
 
-function myAlert(){
+function myAlert() {
     alert(`Congratulations, YOU WIN!`);
 }
 
