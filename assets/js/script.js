@@ -10,7 +10,6 @@ let matched = 0;
 let blockedDeck = false;
 
 
-
 function startEasyGame() {
     easyCards.style.display = "flex";
     normalCards.style.display = "none";
@@ -23,6 +22,8 @@ function startNormalGame() {
 
 // startEasyGame();
 // startNormalGame();
+
+
 
 
 
