@@ -30,12 +30,24 @@
   </div>
 
   <!-- NAV / BUTTONS -->
-  <nav class="navbar">
+
+  <!-- <nav class="navbar">
     <a href="game.html" onclick="startEasyGame()"><button class="easy" id="easy" aria-label="easy game level">Easy
         Game</button></a>
     <a href="game.html" onclick="startNormalGame()"><button class="normal" id="normal" aria-label="normal game level">Normal
         Game</button></a>
+  </nav> -->
+
+  <nav class="navbar">
+  <form onclick="startEasyGame()" style="display: inline" action="game.html" method="get"><button onclick="startEasyGame()" class="easy" id="easy" aria-label="easy game level">Easy
+    Game</button></form>
+  <form style="display: inline" action="game.html" method="get"><button onclick="startNormalGame()" class="normal" id="normal" aria-label="normal game level">Normal
+    Game</button></form>
   </nav>
+
+
+
+
   
   <script src="assets/js/script.js"></script>
 </body>
