@@ -1,11 +1,14 @@
-let normalCards = document.querySelectorAll(".card");
-let easyCards = document.querySelectorAll(".card-easy");
+// let normalCards = document.querySelectorAll(".card");
+// let easyCards = document.querySelectorAll(".card-easy");
+
+let normalCards = document.getElementById("card");
+let easyCards = document.getElementById("card-easy");
+
+
 let cards;
 let cardOne, cardTwo;
 let matched = 0;
 let blockedDeck = false;
-
-
 
 function startGame(game) {
     normalCards.style.display = "none";
@@ -16,7 +19,6 @@ function startGame(game) {
             break;
         case "normal":
             normalCards.style.display = "block";
-            cards = normalCards;
             break;
     }
 }
