@@ -9,6 +9,8 @@ let cardOne, cardTwo;
 let matched = 0;
 let blockedDeck = false;
 
+normalCards.style.display = "none";
+easyCards.style.display = "none";
 
 function startEasyGame() {
     easyCards.style.display = "flex";
@@ -16,37 +18,17 @@ function startEasyGame() {
 }
 
 function startNormalGame() {
-    easyCards.style.display = "none";
     normalCards.style.display = "flex";
+    easyCards.style.display = "none";
 }
-
-// startEasyGame();
-// startNormalGame();
-
-
-
-
-
-// function startGame(game) {
-//     normalCards.style.display = "none";
-//     easyCards.style.display = "none";
-//     switch (game) {
-//         case "easy":
-//             easyCards.style.display = "none";
-//             break;
-//         case "normal":
-//             normalCards.style.display = "none";
-//             break;
-//     }
-// }
 
 /* Add event listener to the cards */
 
 cards.forEach((card) => {
+    console.log("does it work???");
     card.addEventListener("click", flipCard);
 });
 
-console.log("it works");
 /* Function flip card */
 
 function flipCard({

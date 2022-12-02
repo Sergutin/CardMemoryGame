@@ -13,16 +13,19 @@
 
 <body>
   <h1 class="welcome">Enjoy the Game!</h1>
+  <div class="ready">
+    <p>Ready to play? Select the difficulty of the game:</p>
+  </div>
 
   
-    <button onclick="startEasyGame()" class="easy" id="easy" aria-label="easy game level">Test Easy
+    <button onclick="startEasyGame()" class="easy" id="easy" aria-label="easy game level">Easy
         Game</button>
-    <button onclick="startNormalGame()" class="normal" id="normal" aria-label="normal game level">Test Normal
+    <button onclick="startNormalGame()" class="normal" id="normal" aria-label="normal game level">Normal
         Game</button>
 
 
   <!-- EASY GAME -->
-  <div class="cards-easy" id="cards-easy">
+  <div class="cards-easy" id="cards-easy" style="display: none">
     <div class="card-easy" id="card-easy">
       <div class="front-view">
         <img src="assets/images/front.png" alt="car with question mark">
@@ -58,7 +61,7 @@
   </div>
 
   <!-- NORMAL GAME -->
-  <div class="cards" id="cards">
+  <div class="cards" id="cards" style="display: none">
     <div class="card" id="card">
       <div class="front-view">
         <img src="assets/images/front.png" alt="car with question mark">
@@ -192,8 +195,8 @@
   <!-- NAV / BUTTONS -->
   <nav class="navbar">
     <a href="index.html"><button class="home" aria-label="home button">Home</button></a>
-    <a href="game.html"><button class="easy" aria-label="easy game level">Easy Game</button></a>
   </nav>
+
   <script src="assets/js/script.js"></script>
 </body>
 
