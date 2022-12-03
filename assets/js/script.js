@@ -1,7 +1,9 @@
 let normalCards = document.getElementById("cards");
 let easyCards = document.getElementById("cards-easy");
 
-let cards;
+let cards = document.querySelectorAll(".card");
+
+
 let cardOne, cardTwo;
 let matched = 0;
 let blockedDeck = false;
