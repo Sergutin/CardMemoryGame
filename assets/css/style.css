@@ -45,8 +45,7 @@ body {
 .navbar {
   text-align: center;
   place-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto;
 }
 
 button {
@@ -232,13 +231,17 @@ button:hover {
     width: 100%;
     height: auto;
   }
+
+  .cards-easy .back-view img {
+    max-width: 280px;
+  }
 }
 
 @media screen and (max-width:425px) {
   .cards {
     height: 380px;
     width: 380px;
-    margin-left: 25px;
+    /* margin-left: 25px; */
     padding: 15px;
   }
 
@@ -247,12 +250,20 @@ button:hover {
     width: 380px;
   }
 
-  .card .front-view img {
-    width: 55px;
+  .cards-easy .front-view img {
+    width: 120px;
   }
 
-  .card .back-view img {
-    max-width: 65px;
+  .cards-easy .back-view img {
+    max-width: 120px;
+  }
+
+  .cards .front-view img {
+    width: 70px !important;
+  }
+
+  .cards .back-view img {
+    max-width: 70px !important;
   }
 
   .welcome {
@@ -279,6 +290,7 @@ button:hover {
 
   .navbar {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -301,6 +313,14 @@ button:hover {
 
   .card .back-view img {
     max-width: 65px;
+  }
+
+  .cards-easy .front-view img {
+    width: 120px;
+  }
+
+  .cards-easy .back-view img {
+    max-width: 120px;
   }
 
   .info {
