@@ -345,11 +345,10 @@ button:hover {
 }
 
 @media screen and (max-width:320px) {
-  
+
   .cards {
     height: 300px;
     width: 300px;
-    /* margin-left: 12px; */
     padding: 5px;
     margin-left: 10px;
   }
@@ -358,11 +357,11 @@ button:hover {
     max-width: 120px;
   }
 
-  .card .front-view img {
+  .cards .front-view img {
     width: 48px !important;
   }
 
-  .card .back-view img {
+  .cards .back-view img {
     max-width: 55px !important;
   }
 
@@ -382,5 +381,4 @@ button:hover {
     font-size: 25px !important;
     margin: 10px 5px !important;
   }
-
 }
