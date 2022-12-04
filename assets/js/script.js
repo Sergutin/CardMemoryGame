@@ -18,6 +18,7 @@ function startEasyGame() {
 function startNormalGame() {
     normalCards.style.display = "flex";
     easyCards.style.display = "none";
+    console.log("start game");
     shuffleCard();
 }
 
@@ -78,6 +79,7 @@ function matchCards(img1, img2) {
 /* Function shuffle card */
 
 function shuffleCard() {
+    console.log("shuffle function");
     matched = 0;
     blockedDeck = false;
     cardOne = cardTwo = "";
@@ -86,6 +88,7 @@ function shuffleCard() {
     cards.forEach((card, i) => {
         card.classList.remove("flip");
         let imgTag = card.querySelector(".back-view img");
+        console.log(myArray[i]);
         imgTag.src = `assets/images/${myArray[i]}.png`;
         card.addEventListener("click", flipCard);
     });
