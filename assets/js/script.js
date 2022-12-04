@@ -12,11 +12,13 @@ easyCards.style.display = "none";
 function startEasyGame() {
     easyCards.style.display = "flex";
     normalCards.style.display = "none";
+    shuffleEasyCard();
 }
 
 function startNormalGame() {
     normalCards.style.display = "flex";
     easyCards.style.display = "none";
+    shuffleCard();
 }
 
 /* Add event listener to the cards */
@@ -51,7 +53,6 @@ function matchCards(img1, img2) {
         if (matched == 8) {
             setTimeout(() => {
                 myAlert();
-                return shuffleCard();
             }, 500);
         }
         cardOne.removeEventListener("click", flipCard);
@@ -90,10 +91,59 @@ function shuffleCard() {
     });
 }
 
-/* Alert at the end of the game */
+/* Function shuffle card Easy game */
 
-function myAlert() {
-    alert(`Congratulations, YOU WIN!`);
+function shuffleEasyCard() {
+    matched = 0;
+    blockedDeck = false;
+    cardOne = cardTwo = "";
+    let myArray = [1, 2, 2, 1];
+    myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
+    cards.forEach((card, i) => {
+        card.classList.remove("flip");
+        let imgTag = card.querySelector(".back-view img");
+        imgTag.src = `assets/images/${myArray[i]}.png`;
+        card.addEventListener("click", flipCard);
+    });
 }
 
-shuffleCard();
+// function shuffleGame() {
+//     matched = 0;
+//     blockedDeck = false;
+//     cardOne = cardTwo = "";
+//     if (game === "easy") {
+//         myArray = [1, 2, 2, 1];
+//         myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
+//         cards.forEach((card, i) => {
+//             card.classList.remove("flip");
+//             let imgTag = card.querySelector(".back-view img");
+//             imgTag.src = `assets/images/${myArray[i]}.png`;
+//             card.addEventListener("click", flipCard);
+//         })
+//     } else {
+//         myArray = [1, 2, 3, 4, 5, 6, 7, 8, 8, 7, 6, 5, 4, 3, 2, 1];
+//         myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
+//         cards.forEach((card, i) => {
+//             card.classList.remove("flip");
+//             let imgTag = card.querySelector(".back-view img");
+//             imgTag.src = `assets/images/${myArray[i]}.png`;
+//             card.addEventListener("click", flipCard);
+//         })
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+    /* Alert at the end of the game */
+
+    function myAlert() {
+        alert(`Congratulations, YOU WIN!`);
+    }
