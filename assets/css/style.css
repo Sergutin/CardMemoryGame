@@ -46,6 +46,7 @@ body {
   text-align: center;
   place-items: center;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 button {
@@ -226,6 +227,11 @@ button:hover {
     height: 700px;
     width: 700px;
   }
+
+  .game-image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width:425px) {
@@ -261,7 +267,8 @@ button:hover {
   }
 
   .game-image {
-    width: 400px;
+    width: 100%;
+    height: auto;
     margin: 0 auto 0 10px;
   }
 
@@ -298,13 +305,17 @@ button:hover {
 
   .info {
     font-size: 13px !important;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
   }
 
   .welcome {
     font-size: 25px !important;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin: 10px 5px !important;
+  }
+
+  .game-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 }
