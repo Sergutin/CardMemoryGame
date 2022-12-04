@@ -64,6 +64,10 @@ button:hover {
   transform: scale(1.1);
 }
 
+.home {
+  background-color: #F5DEB3;
+}
+
 /* ------------------------------------ CARDS --------------------------------- */
 
 .cards {
@@ -298,7 +302,7 @@ button:hover {
   .cards {
     height: 350px;
     width: 350px;
-    margin-left: 12px;
+    /* margin-left: 12px; */
     padding: 5px;
   }
 
@@ -338,4 +342,45 @@ button:hover {
     height: auto;
     margin: 0 auto;
   }
+}
+
+@media screen and (max-width:320px) {
+  
+  .cards {
+    height: 300px;
+    width: 300px;
+    /* margin-left: 12px; */
+    padding: 5px;
+    margin-left: 10px;
+  }
+
+  .cards-easy .back-view img {
+    max-width: 120px;
+  }
+
+  .card .front-view img {
+    width: 48px !important;
+  }
+
+  .card .back-view img {
+    max-width: 55px !important;
+  }
+
+  .cards-easy {
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+
+  .info {
+    font-size: 13px !important;
+    margin: 10px !important;
+  }
+
+  .welcome {
+    font-size: 25px !important;
+    margin: 10px 5px !important;
+  }
+
 }

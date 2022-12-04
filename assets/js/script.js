@@ -80,22 +80,6 @@ function matchCards(img1, img2) {
 
 /* Function shuffle card */
 
-function shuffleCard() {
-    console.log("shuffle function");
-    matched = 0;
-    blockedDeck = false;
-    cardOne = cardTwo = "";
-    let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 8, 7, 6, 5, 4, 3, 2, 1];
-    myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
-    cards.forEach((normal, i) => {
-        card.classList.remove("flip");
-        let imgTag = card.querySelector(".back-view img");
-        console.log(myArray[i]);
-        imgTag.src = `assets/images/${myArray[i]}.png`;
-        card.addEventListener("click", flipCard);
-    });
-}
-
 // function shuffleCard() {
 //     console.log("shuffle function");
 //     matched = 0;
@@ -103,7 +87,7 @@ function shuffleCard() {
 //     cardOne = cardTwo = "";
 //     let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 8, 7, 6, 5, 4, 3, 2, 1];
 //     myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
-//     cards.forEach((card, i) => {
+//     cards.forEach((normal, i) => {
 //         card.classList.remove("flip");
 //         let imgTag = card.querySelector(".back-view img");
 //         console.log(myArray[i]);
@@ -111,6 +95,22 @@ function shuffleCard() {
 //         card.addEventListener("click", flipCard);
 //     });
 // }
+
+function shuffleCard() {
+    console.log("shuffle function");
+    matched = 0;
+    blockedDeck = false;
+    cardOne = cardTwo = "";
+    let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 8, 7, 6, 5, 4, 3, 2, 1];
+    myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
+    cards.forEach((card, i) => {
+        card.classList.remove("flip");
+        let imgTag = card.querySelector(".back-view img");
+        console.log(myArray[i]);
+        imgTag.src = `assets/images/${myArray[i]}.png`;
+        card.addEventListener("click", flipCard);
+    });
+}
 
 /* Function shuffle card Easy game */
 
