@@ -86,8 +86,8 @@ function shuffleCard() {
     cardOne = cardTwo = "";
     let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 8, 7, 6, 5, 4, 3, 2, 1];
     myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
-    normal.forEach((card, i) => { // not shuffling cards but last line is visible
-    // cards.forEach((card, i) => { // shuffling cards but last bottom line is not showing up
+    // normal.forEach((card, i) => { // not shuffling cards but last line is visible
+    cards.forEach((card, i) => { // shuffling cards but last bottom line is not visible
         card.classList.remove("flip");
         let imgTag = card.querySelector(".back-view img");
         imgTag.src = `assets/images/${myArray[i]}.png`;
