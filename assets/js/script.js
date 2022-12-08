@@ -11,6 +11,8 @@ let blockedDeck = false;
 normalCards.style.display = "none";
 easyCards.style.display = "none";
 
+/* Start game functions */
+
 function startEasyGame() {
     easyCards.style.display = "flex";
     normalCards.style.display = "none";
@@ -20,7 +22,6 @@ function startEasyGame() {
 function startNormalGame() {
     normalCards.style.display = "flex";
     easyCards.style.display = "none";
-    console.log("start game");
     shuffleCard();
 }
 
@@ -81,18 +82,12 @@ function matchCards(img1, img2) {
 /* Function shuffle card */
 
 function shuffleCard() {
-    for (card in normal) {
-        console.log(`Card: ${normal[card]}`);
-    }
     matched = 0;
     blockedDeck = false;
     cardOne = cardTwo = "";
     let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 8, 7, 6, 5, 4, 3, 2, 1];
     myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
-    normal.forEach((card, i) => { // not shuffling cards but last line is visible
-    // cards.forEach((card, i) => { // shuffling cards but last bottom line is not visible
-        console.log(`Loop index: ${i}`);
-        console.log(`Array value in loop: ${myArray[i]}`);
+    normal.forEach((card, i) => {
         card.classList.remove("flip");
         let imgTag = card.querySelector(".back-view img");
         imgTag.src = `assets/images/${myArray[i]}.png`;
@@ -108,8 +103,7 @@ function shuffleEasyCard() {
     cardOne = cardTwo = "";
     let myArray = [1, 2, 2, 1];
     myArray.sort(() => Math.random() > 0.5 ? 1 : -1);
-    // easyCards.forEach((card, i) => { // not shuffling cards
-    cards.forEach((card, i) => { // shuffling cards, all good   
+    cards.forEach((card, i) => {
         card.classList.remove("flip");
         let imgTag = card.querySelector(".back-view img");
         imgTag.src = `assets/images/${myArray[i]}.png`;
