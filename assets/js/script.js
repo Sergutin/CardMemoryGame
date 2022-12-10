@@ -3,7 +3,7 @@ let easyCards = document.getElementById("cards-easy");
 let cards = document.querySelectorAll(".card");
 let normal = document.querySelectorAll(".normal");
 
-let card;
+// let card;
 let cardOne, cardTwo;
 let matched = 0;
 let blockedDeck = false;

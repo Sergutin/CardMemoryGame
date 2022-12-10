@@ -208,10 +208,6 @@ button:hover {
 
 /* ------------------------------------ MODAL WINDOW --------------------------------- */
 
-#myBtn {
-  display: none;
-}
-
 #modal {
   display: none;
   position: fixed;
@@ -224,7 +220,7 @@ button:hover {
   width: auto;
 }
 
-.you-win {
+.youWin {
   width: 600px;
   height: auto;
   background-size: cover;
@@ -276,13 +272,18 @@ button:hover {
   .cards-easy .back-view img {
     max-width: 280px;
   }
+
+  .youWin {
+    width: 500px;
+    height: auto;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width:425px) {
   .cards {
     height: 380px;
     width: 380px;
-    /* margin-left: 25px; */
     padding: 15px;
   }
 
@@ -333,13 +334,22 @@ button:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  .youWin {
+    width: 350px;
+    height: auto;
+    background-size: cover;
+  }
+
+  #modal {
+    top: auto;
+  }
 }
 
 @media screen and (max-width:375px) {
   .cards {
     height: 350px;
     width: 350px;
-    /* margin-left: 12px; */
     padding: 5px;
   }
 
@@ -379,6 +389,12 @@ button:hover {
     height: auto;
     margin: 0 auto;
   }
+
+  .youWin {
+    width: 300px;
+    height: auto;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width:320px) {
@@ -417,5 +433,11 @@ button:hover {
   .welcome {
     font-size: 25px !important;
     margin: 10px 5px !important;
+  }
+
+  .youWin {
+    width: 270px;
+    height: auto;
+    background-size: cover;
   }
 }
