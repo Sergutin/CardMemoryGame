@@ -2,8 +2,8 @@ let normalCards = document.getElementById("cards");
 let easyCards = document.getElementById("cards-easy");
 let cards = document.querySelectorAll(".card");
 let normal = document.querySelectorAll(".normal");
+let level = null;
 
-// let card;
 let cardOne, cardTwo;
 let matched = 0;
 let blockedDeck = false;
@@ -14,12 +14,14 @@ easyCards.style.display = "none";
 /* Start game functions */
 
 function startEasyGame() {
+    level = 'easy';
     easyCards.style.display = "flex";
     normalCards.style.display = "none";
     shuffleEasyCard();
 }
 
 function startNormalGame() {
+    level = 'normal';
     normalCards.style.display = "flex";
     easyCards.style.display = "none";
     shuffleCard();
@@ -52,17 +54,33 @@ function flipCard({
 /* Function match cards */
 
 function matchCards(img1, img2) {
-    if (img1 === img2) {
-        matched++;
-        if (matched == 2) {
-            setTimeout(() => {
-                modal.style.display = "block";
-            }, 500);
+    if (level === 'easy') {
+        if (img1 === img2) {
+            matched++;
+            if (matched == 2) {
+                setTimeout(() => {
+                    modal.style.display = "block";
+                }, 500);
+            }
+            cardOne.removeEventListener("click", flipCard);
+            cardTwo.removeEventListener("click", flipCard);
+            cardOne = cardTwo = "";
+            return blockedDeck = false;
         }
-        cardOne.removeEventListener("click", flipCard);
-        cardTwo.removeEventListener("click", flipCard);
-        cardOne = cardTwo = "";
-        return blockedDeck = false;
+    }
+    if (level === 'normal') {
+        if (img1 === img2) {
+            matched++;
+            if (matched == 8) {
+                setTimeout(() => {
+                    modal.style.display = "block";
+                }, 500);
+            }
+            cardOne.removeEventListener("click", flipCard);
+            cardTwo.removeEventListener("click", flipCard);
+            cardOne = cardTwo = "";
+            return blockedDeck = false;
+        }
     }
 
     /* If cards do not match */
