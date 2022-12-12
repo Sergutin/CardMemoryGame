@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 let normalCards = document.getElementById("cards");
 let easyCards = document.getElementById("cards-easy");
 let cards = document.querySelectorAll(".card");
