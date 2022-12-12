@@ -135,4 +135,4 @@ let modal = document.getElementById("modal");
 let span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
     modal.style.display = "none";
-}
+};

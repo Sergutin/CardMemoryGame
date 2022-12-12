@@ -1,108 +1,167 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>Card Memory Game</h1>
 
-Welcome Sergutin,
+<p>This project introduces an interactive website with Card Memory Game. This game alllows users to test their memory matching the pairs of cards with car manufacturer logos on them.</p>
+<p>Target audience: children of all ages, especially those interested in cars and their logos.</p>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<img src="assets/images/readme/devices.jpg">
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+* [Languages Used](#languages-used)
+* [Features](#features)
+  * [Main Page](#main-page)
+  * [Game Levels](#game-levels)
+  * [Home Button](#home-button)
+  * [Easy Game](#easy-game)
+  * [Normal Game](#normal-game)
+  * [You Win Message](#you-win-message)
+* [Testing](#testing)
+  * [HTML](#html)
+  * [CSS](#css)
+  * [Lighthouse](#lighthouse)
+  * [Manual Testing](#manual-testing)
+  * [Fixed Bugs](#fixed-bugs)
+  * [Unfixed Bugs](#unfixed-bugs)
+* [Deployment](#deployment)
+  * [Cloning and forking](#cloning-and-forking)
+* [Media](#media)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Languages Used
+<p>HTML5</p>
+<p>CSS3</p>
+<p>JavaScript</p>
 
-`python3 -m http.server`
+## Features
+<p>Responsive on all device sizes</p>
+<p>Interactive elements</p>
 
-A blue button should appear to click: _Make Public_,
+  ### Main Page
+<p>The main idea of the game is immediately evident to users, i.e. the landing page shows the image of the child playing cards with two matching cards in his hand.</p>
+<p>This section provides a brief explanation of the game and allows users to easily start the game from the main page just clicking the "Let's Start the Game" button.</p>
 
-Another blue button should appear to click: _Open Browser_.
+<img src="assets/images/readme/main.jpg" width=600px height=auto>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  ### Game Levels 
+<p>After clicking "Let's Start the Game" button users are getting moved to the next page where they can pick the level of the game: "easy" (2x2 cards) or "normal" (4x4).</p>
 
-A blue button should appear to click: _Make Public_,
+<img src="assets/images/readme/levels.jpg" width=600px height=auto>
 
-Another blue button should appear to click: _Open Browser_.
+  ### Home Button
+<p>At the bottom of the game page is located the "home" button, allowing users to open the main page of the game.</p>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<img src="assets/images/readme/home.jpg" width=200px height=auto>
 
-To log into the Heroku toolbelt CLI:
+  ### Easy Game
+<p>After clicking the "Easy Game" button users see the card game field 2x2 cards with car image on the back side.</p>
+<p>Player clicks on the cards to flip them over. If the two cards have the same image (car logo), then player continues with the next cards, otherwise the cards turn face down.</p>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<img src="assets/images/readme/easy.jpg" width=600px height=auto>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  ### Normal Game
+<p>After clicking the "Normal Game" button users see the card game field 4x4 cards with car image on the back side.</p>
+<p>Player clicks on the cards to flip them over. If the two cards have the same image (car logo), then player continues with the next cards, otherwise the cards turn face down.</p>
 
-------
+<img src="assets/images/readme/normal.jpg" width=600px height=auto>
 
-## Release History
+  ### You Win Message
+<p>Once all the pairs have been matched, user wins the game and receives "You Win!" message.</p>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<img src="assets/images/readme/you-win.jpg" width=600px height=auto>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Testing
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  ### HTML 
+<p>No errors were returned when passing through the official W3C validator testing</p>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<img src="assets/images/readme/html-test1.jpg" width=600px height=auto>
+<img src="assets/images/readme/html-test2.jpg" width=600px height=auto>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  ### CSS 
+<p>No errors were found when passing through the official (Jigsaw) CSS validator</p>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<img src="assets/images/readme/css-test1.jpg" width=600px height=auto>
+<img src="assets/images/readme/css-test2.jpg" width=600px height=auto>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  ### Lighthouse
+<p>The website was measured using Lighthouse tool, performance 100% was calculated for desktop device and 100% for mobile device:</p>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<img src="assets/images/readme/lhm.jpg" width=600px height=auto>
+<br>
+<img src="assets/images/readme/lhd.jpg" width=600px height=auto>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  ### Manual testing
+<p>Responsiveness was tested in different browsers:</p>
+<li>Chrome</li>
+<img src="assets/images/readme/chrome.jpg" width=600px height=auto>
+<li>Safari</li>
+<img src="assets/images/readme/safari.jpg" width=600px height=auto>
+<li>Firefox</li>
+<img src="assets/images/readme/firefox.jpg" width=600px height=auto>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<p>Tests were completed in following browsers from mobile device (iOS):</p>
+<li>Chrome</li>
+<img src="assets/images/readme/chromem.jpg" width=600px height=auto>
+<li>Safari</li>
+<img src="assets/images/readme/safarim.jpg" width=600px height=auto>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<p>No broken links found, everything works as expected.</p>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  ### Fixed Bugs
+<p>During the project there were a few bugs and errors that have been fixed.</p>
+<ul>
+<li>One</li>
+<p>Solution: .</p>
+<li>Two</li>
+<p>Solution: .</p>
+<li>Three</li>
+<p>Solution: .</p>
+</ul>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  ### Unfixed Bugs
+<p>There are no known unfixed bugs in the code</p>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Deployment
+<p>The site is deployed using GitHub Pages.</p>
+<p>To deploy the site using GitHub Pages:</p>
+<ol>
+<li>Login or signup to Github.</li>
+<li>Go to the repository for this project, https://github.com/Sergutin/CardMemoryGame</li>
+<li>At the top of the repository, locate the "Settings" button on the menu.</li>
+<li>Select "Pages" section in the left hand menu.</li>
+<li>From the "Source" dropdown select "Deploy from a Branch". Press "Save".</li>
+<li>The site has now been deployed, please note that the process may take a few minutes before the site goes live.</li>
+</ol>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+  ### Cloning and forking
+<p>Forking a repository creates a copy of the original repository on GitHub account.
+To fork a repository in GitHub:</p>
+<ol>
+<li>On GitHub.com, navigate to the repository.</li>
+<li>In the top-right corner of the page, click Fork.</li>
+<img src="assets/images/readme/fork.jpg" width=200px height=auto>
+<li>Select an owner for the forked repository.</li>
+<li>By default, forks are named the same as their parent repositories. You can change the name of the fork to distinguish it further.</li>
+<li>Optionally, add a description of your fork.</li>
+<li>Choose whether to copy only the default branch or all branches to the new fork. For many forking scenarios, such as contributing to open-source projects, you only need to copy the default branch. By default, only the default branch is copied.</li>
+<li>Click Create fork.</li>
+</ol>
 
-------
+<p>Cloning a repository creates a copy of the original repository on our local machine.
+To clone a repository in GitHub:</p>
+<ol>
+<li>On GitHub.com, navigate to your fork of the repository.</li>
+<li>Above the list of files, click  Code.</li>
+<img src="assets/images/readme/code.jpg" width=350px height=auto>
+<li>Copy the URL for the repository.</li>
+<ul>
+    <li>To clone the repository using HTTPS, click the "Copy" icon on the right of "HTTPS".</li>
+<img src="assets/images/readme/clone.jpg" width=500px height=auto>
+<li>To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click the icon on the right to copy it.</li>
+  <li>To clone a repository using GitHub CLI, click GitHub CLI, then click the "Copy" icon on the right.</li>
+</ul>
+</ol>
 
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Media
+<p>The main page image was taken from https://sightwords.com/images/memory/memory.jpg</p>
+<p>The back card image of the car was adapted from https://pictures.dealer.com/c/currychevroletscarsdale/1429/5f5b6bc6d929fb8039c58ab125c0f7a7x.jpg?impolicy=downsize&w=568</p>
+<p>Car logos were taken from _____________________________</p>
+<p>"You Win" image was taken from https://pbs.twimg.com/media/Fg48ZrfXgAAiPR0?format=jpg&name=large</p>
