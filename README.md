@@ -16,6 +16,7 @@
 * [Testing](#testing)
   * [HTML](#html)
   * [CSS](#css)
+  * [JSHint](#jshint)
   * [Lighthouse](#lighthouse)
   * [Manual Testing](#manual-testing)
   * [Fixed Bugs](#fixed-bugs)
@@ -80,6 +81,12 @@
 
 <img src="assets/images/readme/css-test1.jpg" width=600px height=auto>
 <img src="assets/images/readme/css-test2.jpg" width=600px height=auto>
+
+  ### JSHint 
+<p>No errors were found when passing through the official (JSHint) JavaScript validator.
+Two unused variables "startEasyGame" and "startNormalGame" are being called using "button onclick" event from the Game page.</p>
+
+<img src="assets/images/readme/jshint.jpg" width=600px height=auto>
 
   ### Lighthouse
 <p>The website was measured using Lighthouse tool, performance 100% was calculated for desktop device and 100% for mobile device:</p>

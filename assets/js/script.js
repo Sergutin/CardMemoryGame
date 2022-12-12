@@ -43,7 +43,8 @@ function flipCard({
     if (cardOne !== clickedCard && !blockedDeck) {
         clickedCard.classList.add("flip");
         if (!cardOne) {
-            return cardOne = clickedCard;
+            cardOne = clickedCard;
+            return cardOne;
         }
         cardTwo = clickedCard;
         blockedDeck = true;
@@ -67,7 +68,8 @@ function matchCards(img1, img2) {
             cardOne.removeEventListener("click", flipCard);
             cardTwo.removeEventListener("click", flipCard);
             cardOne = cardTwo = "";
-            return blockedDeck = false;
+            blockedDeck = false;
+            return blockedDeck;
         }
     }
     if (level === 'normal') {
@@ -81,7 +83,8 @@ function matchCards(img1, img2) {
             cardOne.removeEventListener("click", flipCard);
             cardTwo.removeEventListener("click", flipCard);
             cardOne = cardTwo = "";
-            return blockedDeck = false;
+            blockedDeck = false;
+            return blockedDeck;
         }
     }
 
