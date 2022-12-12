@@ -263,6 +263,11 @@ button:hover {
     height: 800px;
     width: 800px;
   }
+
+  button {
+    width: 200px;
+    height: 100px;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -356,6 +361,15 @@ button:hover {
   #modal {
     top: auto;
   }
+
+  button {
+    width: 150px;
+    height: 50px;
+  }
+
+  .easy-game, .normal-game {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width:375px) {
@@ -407,6 +421,16 @@ button:hover {
     height: auto;
     background-size: cover;
   }
+
+  button {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+  }
+
+  .easy-game, .normal-game {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width:320px) {
@@ -451,5 +475,16 @@ button:hover {
     width: 270px;
     height: auto;
     background-size: cover;
+  }
+
+  button {
+    width: 140px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .home {
+    width: 140px;
+    height: 40px;
   }
 }
