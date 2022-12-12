@@ -392,6 +392,10 @@ button:hover {
   .normal-game {
     font-size: 20px;
   }
+
+  .youWin {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width:425px) {
@@ -450,7 +454,7 @@ button:hover {
   }
 
   .youWin {
-    width: 350px;
+    width: 300px;
     height: auto;
     background-size: cover;
   }
@@ -572,7 +576,7 @@ button:hover {
   }
 
   .youWin {
-    width: 270px;
+    width: 250px;
     height: auto;
     background-size: cover;
   }
