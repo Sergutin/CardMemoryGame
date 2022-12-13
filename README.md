@@ -115,11 +115,18 @@ Two unused variables "startEasyGame" and "startNormalGame" are being called usin
   ### Fixed Bugs
 <p>During the project there were a few bugs and errors that have been fixed.</p>
 <ul>
-<li>One</li>
-<p>Solution: .</p>
-<li>Two</li>
-<p>Solution: .</p>
-<li>Three</li>
+<li>Bug Number One: "You Win" window appeared every time after 2 matching pairs (for "easy" and for "normal" game as well, while for "normal" game it supposed to appear after 8 matching pairs rather than 2).</li>
+<p>Solution: JavaScript function matchCards was amended from:</p>
+<img src="assets/images/readme/bug1.jpg" width=300px height=auto>
+<p>to:</p>
+<img src="assets/images/readme/bug1fix.jpg" width=300px height=auto>
+<p>Additionally a global variable "level" was added with a default value of "null". It helped to solve the issue.</p>
+<li>Bug Number Two: Shuffle function didn't work properly for easy game, it was taking random cards from the whole array (8 cards) rather than from the first two cards.</li>
+<p>Solution: "shuffleCard" function was moved from "matchCard" function to the very beginning of the game, when users decides which game to play (easy / normal). Code with a bug:</p>
+<img src="assets/images/readme/bug2.jpg" width=300px height=auto>
+<p>Code after the fix:</p>
+<img src="assets/images/readme/bug2fix.jpg" width=300px height=auto>
+<li>Bug Number Three</li>
 <p>Solution: .</p>
 </ul>
 
@@ -170,5 +177,5 @@ To clone a repository in GitHub:</p>
 ## Media
 <p>The main page image was taken from https://sightwords.com/images/memory/memory.jpg</p>
 <p>The back card image of the car was adapted from https://pictures.dealer.com/c/currychevroletscarsdale/1429/5f5b6bc6d929fb8039c58ab125c0f7a7x.jpg?impolicy=downsize&w=568</p>
-<p>Car logos were taken from _____________________________</p>
+<p>Car logos were taken from https://similarpng.com/</p>
 <p>"You Win" image was taken from https://pbs.twimg.com/media/Fg48ZrfXgAAiPR0?format=jpg&name=large</p>
