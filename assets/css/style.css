@@ -277,6 +277,10 @@ button:hover {
     width: 700px;
   }
 
+  .cards .back-view img {
+    width: 130px;
+  }
+
   .cards-easy {
     height: 700px;
     width: 700px;
