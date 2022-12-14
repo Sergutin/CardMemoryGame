@@ -131,8 +131,9 @@ Two unused variables "startEasyGame" and "startNormalGame" are being called usin
 <img src="assets/images/readme/bug2.jpg" width=300px height=auto>
 <p>Code after the fix:</p>
 <img src="assets/images/readme/bug2fix.jpg" width=300px height=auto>
-<li>Bug Number Three</li>
-<p>Solution: .</p>
+<li>Bug Number Three: Last four images in Normal game were not visible, just alt description was available.</li>
+<img src="assets/images/readme/bug3.jpg" width=500px height=auto>
+<p>Solution: forEach function (within shuffleCard function) was trying to run through all the cards, including the ones were hidden (when "Normal" game is being played, "Easy" game cards are being hidden). Another function "shuffleEasyCard" was implemented to separate cards for "normal" game and the ones for "easy" game. It solved the issue.</p>
 </ul>
 
   ### Unfixed Bugs
