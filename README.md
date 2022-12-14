@@ -1,6 +1,6 @@
 <h1>Card Memory Game</h1>
 
-<p>This project introduces an interactive website with Card Memory Game. This game alllows users to test their memory matching the pairs of cards with car manufacturer logos on them.</p>
+<p>This project introduces an interactive website with Card Memory Game. This game allows users to test their memory matching the pairs of cards with car logos on them.</p>
 <p>Target audience: children of all ages, especially those interested in cars and their logos.</p>
 
 <img src="assets/images/readme/devices.jpg">
@@ -42,12 +42,12 @@
 <img src="assets/images/readme/main.jpg" width=600px height=auto>
 
   ### Game Levels 
-<p>After clicking "Let's Start the Game" button users are getting moved to the next page where they can pick the level of the game: "easy" (2x2 cards) or "normal" (4x4).</p>
+<p>After clicking "Let's Start the Game" button users are getting moved to the next (game) page where they can pick the level of the game: "easy" (2x2 cards) or "normal" (4x4).</p>
 
 <img src="assets/images/readme/levels.jpg" width=600px height=auto>
 
   ### Home Button
-<p>At the bottom of the game page is located the "home" button, allowing users to open the main page of the game.</p>
+<p>The "home" button is located at the bottom of the game page, allowing users to open the main page of the game.</p>
 
 <img src="assets/images/readme/home.jpg" width=200px height=auto>
 
@@ -56,12 +56,17 @@
 <p>Player clicks on the cards to flip them over. If the two cards have the same image (car logo), then player continues with the next cards, otherwise the cards turn face down.</p>
 
 <img src="assets/images/readme/easy.jpg" width=600px height=auto>
+<br>
+<img src="assets/images/readme/easy2.jpg" width=600px height=auto>
+
 
   ### Normal Game
 <p>After clicking the "Normal Game" button users see the card game field 4x4 cards with car image on the back side.</p>
 <p>Player clicks on the cards to flip them over. If the two cards have the same image (car logo), then player continues with the next cards, otherwise the cards turn face down.</p>
 
 <img src="assets/images/readme/normal.jpg" width=600px height=auto>
+<br>
+<img src="assets/images/readme/normal2.jpg" width=600px height=auto>
 
   ### You Win Message
 <p>Once all the pairs have been matched, user wins the game and receives "You Win!" message.</p>
@@ -122,7 +127,7 @@ Two unused variables "startEasyGame" and "startNormalGame" are being called usin
 <img src="assets/images/readme/bug1fix.jpg" width=300px height=auto>
 <p>Additionally a global variable "level" was added with a default value of "null". It helped to solve the issue.</p>
 <li>Bug Number Two: Shuffle function didn't work properly for easy game, it was taking random cards from the whole array (8 cards) rather than from the first two cards.</li>
-<p>Solution: "shuffleCard" function was moved from "matchCard" function to the very beginning of the game, when users decides which game to play (easy / normal). Code with a bug:</p>
+<p>Solution: "shuffleCard" function was moved from "matchCard" function to the very beginning of the game, when users decide which game to play (easy / normal). Code with a bug:</p>
 <img src="assets/images/readme/bug2.jpg" width=300px height=auto>
 <p>Code after the fix:</p>
 <img src="assets/images/readme/bug2fix.jpg" width=300px height=auto>
